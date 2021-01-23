@@ -1,0 +1,5 @@
+{
+  "name": "gatsby-source-stripe-custom",
+  "version": "1.0.0",
+  "description": "Plugin to pull in all products from Stripe"
+}

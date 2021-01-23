@@ -10,12 +10,21 @@ module.exports = {
     siteUrl: `https://example.com`,
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
+    // `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          require('postcss-preset-env')({
+            stage: 0
+          })
+        ]
+      }
+    },
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-robots-txt",
     {

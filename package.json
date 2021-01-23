@@ -27,7 +27,10 @@
     "gatsby-plugin-styled-components": "^3.9.0",
     "gatsby-source-filesystem": "^2.10.0",
     "gatsby-transformer-sharp": "^2.11.0",
+    "node-sass": "^5.0.0",
+    "postcss-preset-env": "^6.7.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
   }
 }
