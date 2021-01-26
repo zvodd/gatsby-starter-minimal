@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "initsetup": "git clone https://github.com/zvodd/shop_site_secrets.git && cp shop_site_secrets/.env.* ./ && rm ./shop_site_secrets/ -f -r "
   },
   "license": "0BSD",
   "dependencies": {
