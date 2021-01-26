@@ -1,17 +1,12 @@
-import { StyleStateContext } from "./StyleStateProvider"
-import * as React from "react"
+import React from "react"
+import { StyleStateProvider } from "./StyleStateProvider"
 import "../global.sass"
 
-const Layout = ({ children }) => (
-  <StyleStateContext.Consumer>
-    {(context) => (
-      <React.Fragment>
-        <div className={context.isDark ? "darkTheme" : "lightTheme"}>
-          {children}
-        </div>
-      </React.Fragment>
-    )}
-  </StyleStateContext.Consumer>
-)
+const Layout = ({ children }) => {
+    return (
+    <StyleStateProvider>
+        {children}
+    </StyleStateProvider>
+)}
 
 export default Layout

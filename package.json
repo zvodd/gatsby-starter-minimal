@@ -1,18 +1,15 @@
 {
-  "name": "gatsby-starter-minimal",
+  "name": "gatsby-stripe-shop",
   "version": "1.0.0",
   "private": true,
-  "description": "A Gatsby starter with no plugins and a single welcome page.",
-  "author": "Laurie Barth",
+  "description": "A Gatsby Stripe shop with maximalist intergrations",
+  "author": "zvodd",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "build": "gatsby clean && gatsby build",
     "initsetup": "git clone https://github.com/zvodd/shop_site_secrets.git && cp shop_site_secrets/.env.* ./ && rm ./shop_site_secrets/ -f -r "
   },
   "license": "0BSD",
@@ -32,6 +29,7 @@
     "postcss-preset-env": "^6.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "stripe": "^8.132.0"
   }
 }

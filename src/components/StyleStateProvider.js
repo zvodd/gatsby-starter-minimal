@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState } from "react"
 
 // https://www.digitalocean.com/community/tutorials/gatsbyjs-state-management-in-gatsby
+// https://kentcdodds.com/blog/how-to-use-react-context-effectively
 // Todo include Key Value store for simple things sidebar state.
 
-export const StyleStateContext = React.createContext();
+const StyleStateContext = React.createContext()
+const { Provider } = StyleStateContext;
 
-const StyleStateProvider = props => {
-  const [isDark, setTheme] = useState(false);
+const StyleStateProvider = ({ children }) => {
+  const [isDark, setTheme] = useState(false)
+
+  const value = {
+    isDark,
+    changeTheme: () => setTheme(!isDark),
+  }
 
   return (
-    <StyleStateContext.Provider value={{
-      isDark,
-      changeTheme: () => setTheme(!isDark)
-    }}>
-      {props.children}
-    </StyleStateContext.Provider>
+    <Provider value={value}>{children}</Provider>
   )
-};
+}
 
-export default  ({ element }) => (
-  <StyleStateProvider>
-    {element}
-  </StyleStateProvider>
-);
+export { StyleStateContext as default, StyleStateProvider };
