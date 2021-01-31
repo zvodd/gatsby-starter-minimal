@@ -1,12 +1,17 @@
 import React from "react"
 import { StyleStateProvider } from "./StyleStateProvider"
+import { CartProvider } from "./Cart/CartProvider"
+import { ProductProvider } from "./ProductProvider"
 import "../global.sass"
 
 const Layout = ({ children }) => {
-    return (
+  return (
     <StyleStateProvider>
-        {children}
+      <ProductProvider>
+        <CartProvider>{children}</CartProvider>
+      </ProductProvider>
     </StyleStateProvider>
-)}
+  )
+}
 
 export default Layout
