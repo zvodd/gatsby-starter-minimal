@@ -1,12 +1,20 @@
+A Gatsby + Stripe shop with maximalist intergrations and opinionated workflow.
+
 ## 🚀 Quick start
 
-1. 
-    Run in gitpod
-    gitpod.io/#https://github.com/zvodd/gatsby-stripe-shop
+
+1.  **Run in gitpod**
+    [https://gitpod.io/#https://github.com/zvodd/gatsby-stripe-shop](https://gitpod.io/#https://github.com/zvodd/gatsby-stripe-shop)
+    
 
 2.  **Start developing.**
 
-    Create and `.env.development` file containing `STRIPE_PUBLISHABLE_KEY` & `STRIPE_SECRET_KEY` entries.
+    Create and `.env.development` file containing appropraite values:
+    ```
+    STRIPE_PUBLISHABLE_KEY="123abc"
+    STRIPE_SECRET_KEY="123abc"
+    SITE_HOST="https://8000-gitpod-instance-hostname/"
+    ```
     Remeber to save this else where as it is listed in the `.gitignore` file and won't be version controlled (i.e. will get deleted).
 
     ```shell
@@ -22,7 +30,7 @@
 
 4.  **Learn more**
 
-    - Loosly based on [gatsby-starter-stripe](https://github.com/brxck/gatsby-starter-stripe)
+    - Loosely based on [gatsby-starter-stripe](https://github.com/brxck/gatsby-starter-stripe)
 
     - [Documentation](https://www.gatsbyjs.com/docs)
 
