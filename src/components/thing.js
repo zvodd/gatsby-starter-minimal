@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import StyleStateContext from "../components/StyleStateProvider"
+import StyleStateContext from "../components/styleStateProvider"
 
 
 const Thing = () => {
